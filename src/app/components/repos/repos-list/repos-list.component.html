@@ -1,0 +1,16 @@
+<table class="table table-responsive">
+    <tr>
+        <th>User Name</th>
+        <th>Language</th>
+        <th>Description</th>
+        <th>Size</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let repo of filteredRepos | filter: searchByKeyword: 'name'">
+            <td>{{ repo.name}}</td>
+            <td>{{ repo.language}}</td>
+            <td>{{ repo.description}}</td>
+            <td>{{ repo.size}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+<div class="container">
+    <br />
+    <h1>List of Repos</h1>
+    <hr />
+
+    <app-search (groupFilters)="filters = $event"></app-search>
+
+    <br />
+
+    <app-repos-list [groupFilters]="filters" [searchByKeyword]="searchText"></app-repos-list>
+</div>
